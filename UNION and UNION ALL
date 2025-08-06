@@ -1,0 +1,33 @@
+-- UNION
+-- to combine rows
+-- combine multiple select statements
+SELECT first_name, sales FROM vancouver 
+UNION
+SELECT first_name, sales FROM delhi
+
+-- 3 things to remember:
+--  1. How columns are matched? (Columns are matched by the order - order of columns must be same)
+--  2. No. of columns & Data type must match
+--  3. Duplicates are decoupled, if wants to keep duplicates naturally, use UNION ALL function
+
+-- Check all first_name columns from different table and union all col in one
+-- also find origin of the name
+
+select first_name, 'actor' as origin from actor
+union
+select first_name, 'customer' as origin from customer
+order by 1 asc
+
+select first_name, 'actor' as origin from actor
+union all
+select first_name, 'customer' as origin from customer
+order by 1 asc
+
+select first_name, 'actor' as origin from actor
+union all
+select first_name, 'customer' as origin from customer
+union all
+select upper(first_name), 'staff' as origin from staff
+order by 2 desc
+
+
