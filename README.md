@@ -14,7 +14,7 @@ This repository contains my practice exercises on **SQL set operations**, specif
 - Practical use cases with sample data
 
 ### 📂 File:
-- `union_unionall_practice.sql` — includes all queries I practiced with explanations in comments.
+- `UNION and UNION ALL` — includes all queries I practiced with explanations in comments.
 
 ### 📚 Learning Outcome:
 Practicing these queries helped me understand how to merge datasets efficiently and when to use `UNION` or `UNION ALL` depending on the data scenario.
